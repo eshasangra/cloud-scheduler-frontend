@@ -16,7 +16,7 @@ const SimulationResult = () => {
   const fetchData = async (strategy) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/simulate/${strategy}`
+        `http://18.217.9.56:8081/api/simulate/${strategy}`
       );
       setResultData({
         strategyName: strategy === "round" ? "Round Robin" : "Least Connection",
